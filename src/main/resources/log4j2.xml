@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout charset="UTF-8" pattern="%d{hh:mm:ss} %5p [%c] %m%n" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <logger name="com.mogreene" level="INFO" additivity="false">
+            <appender-ref ref="console"/>
+        </logger>
+
+        <root level="INFO" additivity="false">
+            <AppenderRef ref="console"/>
+        </root>
+    </Loggers>
+</Configuration>
